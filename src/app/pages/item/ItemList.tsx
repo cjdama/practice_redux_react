@@ -14,9 +14,10 @@ const ItemList = ({ items }: ItemProps) => {
     return (
         <div>
             <button onClick={handleClick}>Refresh</button>
+
             <ul>
                 {items.map((item: Item) => (
-                    <li key={item.id}>{item.name}</li>
+                    <li key={item.id}>{item.name + " " + item.year + " " + item.color + " " + item.pantone_value}</li>
                 ))}
             </ul>
         </div>

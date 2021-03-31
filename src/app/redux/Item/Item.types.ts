@@ -17,4 +17,7 @@ export interface RefreshItemListSuccess {
 export interface Item {
     id: number
     name: string
+    year: string
+    color: string
+    pantone_value: string
 }
